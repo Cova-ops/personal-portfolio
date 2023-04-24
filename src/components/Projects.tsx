@@ -1,10 +1,12 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { project } from '../pages/api/api.type'
 
-type Props = {}
+type Props = {
+  projects: project[]
+}
 
-const Projects = (props: Props) => {
-  const projects = [1, 2, 3, 4, 5]
+const Projects = ({ projects }: Props) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -17,8 +19,8 @@ const Projects = (props: Props) => {
       </h3>
 
       <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
-        {projects.map((project, idx) => (
-          <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
+        {projects.map((item, idx) => (
+          <div key={idx} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
             <motion.img
               initial={{ y: -300, opacity: 0 }}
               transition={{ duration: 1.2 }}
@@ -33,11 +35,22 @@ const Projects = (props: Props) => {
               <h4 className='text-4xl font-semibold text-center'>
                 <span className='underline decoration-[#F7AB0A]/50'>
                   Case study {idx + 1} of {projects.length}:
-                </span> UPS clone
+                </span> {item.title}
               </h4>
 
+              <div className='flex items-center space-x-2 justify-center'>
+                {item.technologies.map((technology, idx2) => (
+                  <img
+                    className='h-10 w-10'
+                    key={idx2}
+                    src={technology.image}
+                    alt=''
+                  />
+                ))}
+              </div>
+
               <p className='text-lg text-center md:text-left'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                {item.summary}
               </p>
 
             </div>

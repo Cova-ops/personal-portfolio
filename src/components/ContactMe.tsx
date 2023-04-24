@@ -2,8 +2,11 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { PhoneIcon, MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/solid'
 import { SubmitHandler, useForm } from 'react-hook-form'
+import { pageInfo } from '../pages/api/api.type'
 
-type Props = {}
+type Props = {
+  pageInfo: pageInfo
+}
 
 type Inputs = {
   name: string;
@@ -12,7 +15,7 @@ type Inputs = {
   message: string;
 };
 
-const ContactMe = (props: Props) => {
+const ContactMe = ({ pageInfo }: Props) => {
 
   const { register, handleSubmit } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = formData => {
@@ -35,17 +38,17 @@ const ContactMe = (props: Props) => {
         <div className='space-y-10'>
           <div className='flex items-center space-x-5 justify-center'>
             <PhoneIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse' />
-            <p className='text-2xl'>+515510057272</p>
+            <p className='text-2xl'>{pageInfo.phoneNumber}</p>
           </div>
 
           <div className='flex items-center space-x-5 justify-center'>
             <EnvelopeIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse' />
-            <p className='text-2xl'>dacovasan@gmail.com</p>
+            <p className='text-2xl'>{pageInfo.email}</p>
           </div>
 
           <div className='flex items-center space-x-5 justify-center'>
             <MapPinIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse' />
-            <p className='text-2xl'>streets 123</p>
+            <p className='text-2xl'>{pageInfo.address}</p>
           </div>
         </div>
 
