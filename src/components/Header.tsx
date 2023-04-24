@@ -2,14 +2,17 @@ import React, { useEffect, useState } from 'react'
 import { SocialIcon } from 'react-social-icons'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import { social } from '../pages/api/api.type'
 
-type Props = {}
+type Props = {
+  socials: social[]
+}
 
-const Header = (props: Props) => {
+const Header = ({ socials }: Props) => {
 
   const [statusWindow, setStatusWindow] = useState(null)
 
-  useEffect(() => { setStatusWindow(true) }, [])
+  useEffect(() => { setStatusWindow(null) }, [])
 
   return (
     <header className='sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center'>
@@ -20,9 +23,14 @@ const Header = (props: Props) => {
         transition={{ duration: 1.5 }}
         className='flex flex-row items-center'>
 
-        <SocialIcon url='https://www.youtube.com/sonnysangha' fgColor='gray' bgColor='transparent' />
-        <SocialIcon url='https://www.youtube.com/sonnysangha' fgColor='gray' bgColor='transparent' />
-        <SocialIcon url='https://www.youtube.com/sonnysangha' fgColor='gray' bgColor='transparent' />
+        {socials.map((item, idx) => (
+          <SocialIcon
+            url={item.url}
+            key={idx}
+            fgColor='gray'
+            bgColor='transparent'
+          />
+        ))}
 
       </motion.div>
 

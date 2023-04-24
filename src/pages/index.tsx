@@ -22,7 +22,7 @@ type Props = {
   experiences: experience[]
   projects: project[]
   skills: skill[]
-  social: social
+  social: social[]
 }
 
 const Home = ({ pageInfo, experiences, social, skills, projects }: Props) => {
@@ -32,7 +32,7 @@ const Home = ({ pageInfo, experiences, social, skills, projects }: Props) => {
         <title>Daniel's - Portfolio</title>
       </Head>
 
-      <Header />
+      <Header socials={social} />
 
       <section id="hero" className='snap-center'>
         <Hero pageInfo={pageInfo} />
@@ -80,7 +80,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   const projects: project[] = await fetchProject()
   const experiences: experience[] = await fetchExperience()
   const skills: skill[] = await fetchSkill()
-  const social: social = await fetchSocial()
+  const social: social[] = await fetchSocial()
 
   return {
     props: {
