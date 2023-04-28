@@ -27,7 +27,7 @@ const Projects = ({ projects }: Props) => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               className='max-h-52 xl:max-h-96'
-              src='img/user.png'
+              src={item.image}
               alt=''
             />
 
@@ -41,7 +41,7 @@ const Projects = ({ projects }: Props) => {
               <div className='flex items-center space-x-2 justify-center'>
                 {item.technologies.map((technology, idx2) => (
                   <img
-                    className='h-10 w-10'
+                    className='h-10 w-10 object-contain'
                     key={idx2}
                     src={technology.image}
                     alt=''

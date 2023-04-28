@@ -27,7 +27,7 @@ const Hero = ({ pageInfo }: Props) => {
 
       <img
         className='relative rounded-full h-32 w-32 mx-auto object-cover'
-        src='img/user.png'
+        src={pageInfo.heroImage}
         alt=''
       />
 

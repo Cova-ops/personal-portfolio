@@ -23,7 +23,7 @@ const Skills = ({ skills }: Props) => {
         Hover over a skill for current profieciency
       </h3>
 
-      <div className='grid grid-cols-4 gap-5'>
+      <div className='grid grid-cols-5 gap-5'>
         {skills.slice(0, skills.length / 2).map((item, idx) => (
           <Skill key={idx} skill={item} />
         ))}
