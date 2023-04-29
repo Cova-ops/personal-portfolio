@@ -33,9 +33,9 @@ const Projects = ({ projects }: Props) => {
 
             <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
               <h4 className='text-4xl font-semibold text-center'>
-                <span className='underline decoration-[#F7AB0A]/50'>
+                <a href={item.linkToBuild} target='_blank' className='underline decoration-[#F7AB0A]/50'>
                   Case study {idx + 1} of {projects.length}:
-                </span> {item.title}
+                </a> {item.title}
               </h4>
 
               <div className='flex items-center space-x-2 justify-center'>

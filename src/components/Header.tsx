@@ -26,6 +26,7 @@ const Header = ({ socials }: Props) => {
         {socials.map((item, idx) => (
           <SocialIcon
             url={item.url}
+            target='_blank'
             key={idx}
             fgColor='gray'
             bgColor='transparent'
@@ -54,3 +55,4 @@ const Header = ({ socials }: Props) => {
 }
 
 export default Header
+
