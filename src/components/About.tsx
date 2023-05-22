@@ -35,7 +35,7 @@ const About = ({ pageInfo }: Props) => {
           {" "}
           background
         </h4>
-        <p className='text-base'>
+        <p className='text-base whitespace-pre-line text-justify'>
           {pageInfo.backgroundInformation}
         </p>
       </div>

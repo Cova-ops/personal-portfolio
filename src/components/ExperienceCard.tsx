@@ -9,12 +9,12 @@ type Props = {
 const ExperienceCard = ({ experience }: Props) => {
   { console.log(experience.companyImage) }
   return (
-    <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] max-h-[650px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden'>
+    <article className='h-screen flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[800px] max-h-[650px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden'>
       <motion.img
         initial={{ y: -100, opacity: 0 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className='w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-contain object-center'
+        className='w-28 h-28 rounded-full xl:w-[180px] xl:h-[180px] object-contain object-center'
         src={experience.companyImage}
         alt=''
       />
@@ -27,7 +27,7 @@ const ExperienceCard = ({ experience }: Props) => {
           {experience.technologies.map((item, idx) => (
             <img
               key={idx}
-              className='h-10 w-10 rounded-sm'
+              className='h-8 w-8 rounded-sm'
               src={item.image}
               alt=''
             />
@@ -38,7 +38,7 @@ const ExperienceCard = ({ experience }: Props) => {
           {new Date(experience.dateStarted).toDateString()} - {" "} {experience.isCurrentlyWorkingHere ? "Present" : new Date(experience.dateEnded).toDateString()}
         </p>
 
-        <ul className='list-disc space-y-4 ml-5 text-lg max-h-96 overflow-y-scroll pr-5 scrollbar-thin scrollbar-track-black scrollbar-thumb-[#F7AB0A]/80'>
+        <ul className='list-disc max-h-[50%] space-y-4 ml-5 text-lg max-h-96 overflow-y-scroll pr-5 scrollbar-thin scrollbar-track-black scrollbar-thumb-[#F7AB0A]/80'>
           {experience.points.map((item, idx) => (
             <li key={idx}>- {item}</li>
           ))}
