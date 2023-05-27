@@ -13,6 +13,7 @@ export type pageInfo = errorHandle & {
   email: string
   role: string
   heroImage: Link
+  heroImage2: Link
   name: string
   phoneNumber: Link
 }
