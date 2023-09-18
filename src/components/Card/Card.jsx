@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const Card = ({ children }) => {
   return (
     <div>
-        {children}
+      {children}
     </div>
   )
 }

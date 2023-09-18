@@ -1,9 +1,11 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
-const App = props => {
+// routes
+import Router from './routes'
+
+const App = () => {
   return (
-    <div>App</div>
+    <Router />
   )
 }
 

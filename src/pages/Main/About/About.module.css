@@ -1,0 +1,45 @@
+.container {
+  min-height: 1000px;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  display: flex;
+}
+
+.background__one {
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: auto;
+  height: 100%;
+  display: flex;
+}
+
+.div__brackground__one {
+  width: 100px;
+  background-color: #1C232D;
+  z-index: 5;
+}
+
+.background__two {
+  position: absolute;
+  top: 0;
+  left: -100px;
+  width: auto;
+  height: 100%;
+  display: flex;
+}
+
+.div__brackground__two {
+  width: 200px;
+  background-color: #222a36;
+  z-index: 10;
+}
+
+.information {
+  width: 100%;
+  /* background-color: red; */
+  z-index: 15;
+  margin-top: 250px;
+  margin-bottom: 250px;
+}

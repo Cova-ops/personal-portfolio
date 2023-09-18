@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  margin: 50px 100px;
+  background: transparent;
+  z-index: 10;
+  position: relative;
+}
+
+.header span {
+  font-family: 'Cascadia Code PL';
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-family: 'Courier New';
+  font-size: 1.1rem;
+  margin-left: 40px;
+}
+
+.link:hover {
+  color: #5AFFEE;
+}
+
+.blue {
+  color: #5AFFEE;
+}

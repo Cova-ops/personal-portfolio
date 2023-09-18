@@ -1,0 +1,21 @@
+.button {
+  width: 100%;
+  max-width: 300px;
+  background-color: transparent;
+  border: 1px solid #5AFFEE;
+  border-radius: 4px;
+  color: #5AFFEE;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}

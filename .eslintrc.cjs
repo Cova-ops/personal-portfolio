@@ -5,9 +5,8 @@ module.exports = {
   },
   extends: [
     'standard',
-    'standard-jsx',
     'plugin:react/recommended',
-    'plugin:react/jsx-runtime'
+    'standard-jsx'
   ],
   overrides: [
     {
@@ -15,7 +14,7 @@ module.exports = {
         node: true
       },
       files: [
-        '.eslintrc.{js,cjs,jsx,mjs,mjsx}'
+        '.eslintrc.{js,cjs}'
       ],
       parserOptions: {
         sourceType: 'script'
@@ -30,10 +29,5 @@ module.exports = {
     'react'
   ],
   rules: {
-  },
-  settings: {
-    react: {
-      version: 'detect'
-    }
   }
 }
