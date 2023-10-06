@@ -8,9 +8,9 @@ import { RHButton } from '../../../components'
 import avatar from '../../../assets/avatar.svg'
 import styles from './Me.module.css'
 
-function Me (props) {
+function Me () {
   return (
-    <div className={styles.me} id='Me'>
+    <div className={styles.me}>
       <div className={styles.background} />
 
       <div className={styles.information}>

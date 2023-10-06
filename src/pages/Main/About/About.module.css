@@ -40,6 +40,69 @@
   width: 100%;
   /* background-color: red; */
   z-index: 15;
-  margin-top: 250px;
-  margin-bottom: 250px;
+  display: flex;
+  margin: 250px 100px;
+  justify-content: space-around;
+}
+
+.avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  margin-right: 100px;
+}
+
+.avatar>img {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  object-fit: cover;
+  border: 5px solid #5AFFEE;
+  border-spacing: 10px;
+  border-radius: 50%;
+}
+
+.avatar>h2 {
+  font-family: 'Courier New';
+  letter-spacing: -1px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.about {
+  max-width: 600px;
+  min-width: 600px;
+}
+
+.about>h2 {
+  font-family: 'Cascadia Code PL';
+  letter-spacing: -1px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.about>h4 {
+  font-family: 'Cascadia Code PL';
+  letter-spacing: -1px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.about>p {
+  font-family: 'Courier New';
+  letter-spacing: -1px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.blue {
+  color: #5AFFEE;
+  margin-right: 10px;
+  font-weight: bold;
 }

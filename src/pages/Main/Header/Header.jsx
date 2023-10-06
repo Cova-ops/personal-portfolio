@@ -1,15 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+// data
+import { idSectionAbout, idSectionContact, idSectionExperience, idSectionProjects, idSectionSkills } from '../../../data'
+
 import styles from './Header.module.css'
 
 // constants
 const Links = [
-  { name: 'About', id: 'About' },
-  { name: 'Experience', id: 'Experience' },
-  { name: 'Skills', id: 'Skills' },
-  { name: 'Projects', id: 'Projects' },
-  { name: 'Contact', id: 'Contact' }
+  { name: 'About', id: idSectionAbout },
+  { name: 'Experience', id: idSectionExperience },
+  { name: 'Skills', id: idSectionSkills },
+  { name: 'Projects', id: idSectionProjects },
+  { name: 'Contact', id: idSectionContact }
 ]
 
 // ----------------------------------------------------------------------
