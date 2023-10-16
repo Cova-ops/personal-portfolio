@@ -9,9 +9,9 @@ import styles from './Header.module.css'
 // constants
 const Links = [
   { name: 'About', id: idSectionAbout },
-  { name: 'Experience', id: idSectionExperience },
-  { name: 'Skills', id: idSectionSkills },
   { name: 'Projects', id: idSectionProjects },
+  { name: 'Skills', id: idSectionSkills },
+  { name: 'Experience', id: idSectionExperience },
   { name: 'Contact', id: idSectionContact }
 ]
 
@@ -19,7 +19,7 @@ const Links = [
 
 const Header = ({ name }) => {
   return (
-    <div id='Header' className={styles.header}>
+    <header className={styles.header}>
       <span>
         <span className={styles.blue}>&lt;</span>
         {name}
@@ -31,11 +31,10 @@ const Header = ({ name }) => {
             <a href={`#${link.id}`} key={link.id} className={styles.link}>
               {link.name}
             </a>
-          )
-          )
+          ))
         }
       </div>
-    </div>
+    </header>
   )
 }
 

@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from 'react'
-// import PropTypes from 'prop-types'
-
 import { SocialIcon } from 'react-social-icons'
+// import PropTypes from 'prop-types'
 
 // data
 import { idSectionAbout } from '../../../data'
 
+// assets
+import imgMe from '../../../assets/image_yo.jpg'
+
 import styles from './About.module.css'
 
 // constants
-
 const socialMedia = [
   'https://github.com/Cova-ops',
   'https://www.linkedin.com/in/daniel-covarrubias-a5b2b7191/',
@@ -60,9 +61,10 @@ const About = () => {
   }, [])
 
   return (
-    <div className={styles.container} id={idSectionAbout}>
+    <section className={styles.container} id={idSectionAbout}>
       <div className={styles.information}>
         <div className={styles.avatar}>
+          {/* <img src={imgMe} alt='' /> */}
           <img src='https://cdn.dribbble.com/users/4543156/screenshots/14125478/media/cb000e6e6916abe4d76d3ad3d0cf3589.png' alt='' />
           <h2>Daniel Covarrubias</h2>
           <div className={styles.media}>
@@ -76,12 +78,12 @@ const About = () => {
             <span className={styles.blue}>&gt;</span>
             About
           </h2>
-          <h4>Lorem ipsum dolor sit amet</h4>
+          <h4>Meet Me: Your Back-End Development Partner</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam molestiae commodi voluptas ex unde corporis sunt, repellendus asperiores earum iusto repudiandae assumenda ipsa, quod aspernatur? Error, mollitia? Id, recusandae dolorem.
+            I'm Daniel Covarrubias, a dedicated <strong>back-end</strong> developer with a passion for crafting the hidden infrastructure that powers the digital world. With 2 years of experience in the field, I have honed my skills in creating <strong>efficient</strong>, <strong>secure</strong>, and <strong>scalable</strong> web applications. My journey as a developer has been marked by continuous learning, problem-solving, and a commitment to excellence.
           </p>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit sed doloribus adipisci rerum commodi praesentium officia recusandae libero corrupti, voluptates quos neque, veritatis dolore aut harum, expedita illum nesciunt? Nesciunt.
+            My commitment to precision, efficiency, and continuous improvement makes me a valuable asset for any <strong>web development</strong> project. I'm passionate about delivering results and exceeding expectations. Collaborating with me means tapping into a wealth of knowledge and experience to bring your ideas to <strong>life</strong>.
           </p>
         </div>
       </div>
@@ -92,7 +94,7 @@ const About = () => {
       <div className={styles.background__two}>
         {arrBackgroundTwo}
       </div>
-    </div>
+    </section>
   )
 }
 

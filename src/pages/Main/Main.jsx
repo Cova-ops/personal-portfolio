@@ -6,8 +6,11 @@ import Page from '../../components/Page/Page'
 import Header from './Header/Header'
 import Me from './Me/Me'
 import About from './About/About'
+import Skills from './Skills/Skills'
+import Projects from './Projects/Projects'
 
 import styles from './Main.module.css'
+import Contact from './Contact/Contact'
 
 // ----------------------------------------------------------------------
 
@@ -22,6 +25,12 @@ export default function Main () {
       <Me />
 
       <About />
+
+      <Projects />
+
+      <Skills />
+
+      <Contact />
 
     </Page>
   )

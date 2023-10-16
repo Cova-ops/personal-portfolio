@@ -1,0 +1,64 @@
+.container {
+  min-height: 500px;
+  margin: 50px 100px;
+  overflow-x: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container>h2 {
+  font-family: 'Cascadia Code PL';
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.blue {
+  color: #5AFFEE;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.body__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.body__container>p {
+  font-family: 'Courier New';
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #aaa;
+}
+
+.contact__links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact__links>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 20px;
+  min-width: 600px;
+  min-height: 100px;
+  /* background-color: red; */
+}
+
+.contact__links>div>a {
+  font-family: 'Courier New';
+  font-size: 1.2rem;
+  margin-left: 20px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}

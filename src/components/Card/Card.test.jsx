@@ -6,9 +6,11 @@ import Card from './Card'
 
 describe('Card', () => {
   test('should render', () => {
-    render(<Card >
+    render(
+      <Card>
         <h1>Card</h1>
-    </Card>)
+      </Card>
+    )
 
     expect(screen.getByText('Card')).toBeDefined()
   })

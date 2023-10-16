@@ -4,4 +4,5 @@
   overflow: auto;
   position: relative;
   max-width: 2048px;
+  scroll-behavior: smooth;
 }

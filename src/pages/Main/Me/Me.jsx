@@ -9,6 +9,15 @@ import avatar from '../../../assets/avatar.svg'
 import styles from './Me.module.css'
 
 function Me () {
+  const handleDownloadCV = () => {
+    const filePath = '/CV.pdf' // Ruta del archivo en la carpeta "public"
+    const downloadLink = document.createElement('a')
+    downloadLink.href = filePath
+    // downloadLink.href = process.env.PUBLIC_URL + filePath
+    downloadLink.download = 'CV.pdf' // Nombre del archivo descargado
+    downloadLink.click()
+  }
+
   return (
     <div className={styles.me}>
       <div className={styles.background} />
@@ -21,9 +30,9 @@ function Me () {
           Daniel Covarrubias
         </span>
         <span className={styles.desc}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, quae placeat necessitatibus quidem ipsam alias dolores ex illo harum voluptas temporibus ab nisi libero beatae veritatis atque molestiae aliquam saepe.
+          Hello and welcome to my online portfolio. I'm a passionate and experienced back-end developer dedicated to creating robust and efficient web applications. With a strong foundation in programming, I specialize in crafting the unseen but vital components that power the digital world.
         </span>
-        <RHButton text='Download CV' />
+        <RHButton text='Download CV' onClick={handleDownloadCV} />
       </div>
       <img src={avatar} alt='avatar' className={styles.avatar} />
 

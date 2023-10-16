@@ -83,6 +83,7 @@
   font-size: 1.8rem;
   font-weight: 500;
   margin-bottom: 30px;
+  text-transform: capitalize;
 }
 
 .about>h4 {
@@ -99,6 +100,12 @@
   font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 30px;
+  color: #aaa;
+}
+
+.about>p>strong {
+  color: white;
+  letter-spacing: 0.7px;
 }
 
 .blue {

@@ -1,0 +1,51 @@
+.container {
+  min-width: 400px;
+  min-height: 400px;
+  max-width: 400px;
+  margin: 20px 40px;
+  background-color: #222a36;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+  flex: 1;
+}
+
+.container>img {
+  width: calc(100% - 30px);
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.container>h2 {
+  font-family: 'Cascadia Code PL';
+  font-size: 1.5rem;
+  width: calc(100% - 40px);
+  margin: 20px 20px;
+}
+
+.container>p {
+  font-family: 'Courier New';
+  font-size: 1rem;
+  width: calc(100% - 40px);
+  margin: 0px 20px 20px 20px;
+  color: #aaa;
+}
+
+.container::before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  left: 15px;
+  width: calc(100% - 30px);
+  height: 10px;
+  background-color: #5AFFEE;
+  z-index: 10;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
