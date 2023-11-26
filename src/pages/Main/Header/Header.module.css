@@ -9,10 +9,16 @@
   position: relative;
 }
 
-.header span {
+.header>span {
   font-family: 'Cascadia Code PL';
   font-size: 1.2rem;
   font-weight: bold;
+  min-width: 250px;
+}
+
+.header>div {
+  display: flex;
+  justify-content: center;
 }
 
 .link {
@@ -21,6 +27,7 @@
   font-family: 'Courier New';
   font-size: 1.1rem;
   margin-left: 40px;
+  flex: 1;
 }
 
 .link:hover {
@@ -29,4 +36,27 @@
 
 .blue {
   color: #5AFFEE;
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    margin: 20px 30px;
+    flex-direction: column;
+  }
+
+  .header>span {
+    margin-bottom: 20px;
+  }
+
+  .header>div {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .link {
+    margin: 0;
+    margin-bottom: 10px;
+    min-width: 300px;
+    text-align: center;
+  }
 }

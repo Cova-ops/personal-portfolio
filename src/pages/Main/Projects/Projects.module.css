@@ -29,3 +29,14 @@
   margin-right: 10px;
   font-weight: bold;
 }
+
+@media screen and (max-width: 1200px) {
+  .container {
+    margin-top: 50px;
+    min-height: auto;
+  }
+
+  .container>h2 {
+    font-size: 1.2rem;
+  }
+}

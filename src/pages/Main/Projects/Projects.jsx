@@ -7,9 +7,26 @@ import { RHCard } from '../../../components'
 // data
 import { idSectionProjects } from '../../../data'
 
+// assets
+import Pokedex from '../../../assets/pokedex.jpg'
+
 import styles from './Projects.module.css'
 
+// constants
+const projects = [
+  {
+    title: 'PokeDex',
+    description: 'Explore the fascinating world of Pokémon through our interactive Pokédex simulation. Immerse yourself in a comprehensive collection of Pokémon information, from basic details to advanced stats. Our user-friendly interface allows you to search and discover various Pokémon species, including their types, abilities, and evolutions.',
+    image: Pokedex,
+    url: 'https://pokedex.dacovasan.dev'
+  }
+]
+
 const Projects = props => {
+  const handleClick = (url) => {
+    window.open(url, '_blank')
+  }
+
   return (
     <section className={styles.container} id={idSectionProjects}>
       <h2>
@@ -17,31 +34,15 @@ const Projects = props => {
         Projects
       </h2>
       <div className={styles.cards__container}>
-        <RHCard>
-          <img src='https://cdn.dribbble.com/users/4543156/screenshots/14125478/media/cb000e6e6916abe4d76d3ad3d0cf3589.png' alt='' />
-          <h2>Lorem ipsum </h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quo quod, obcaecati pariatur quae, harum sequi molestias impedit nobis magnam illum nam eaque qui soluta quasi laudantium quaerat reprehenderit nisi.</p>
-        </RHCard>
-        <RHCard>
-          <img src='https://cdn.dribbble.com/users/4543156/screenshots/14125478/media/cb000e6e6916abe4d76d3ad3d0cf3589.png' alt='' />
-          <h2>Lorem ipsum </h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quo quod, obcaecati pariatur quae, harum sequi molestias impedit nobis magnam illum nam eaque qui soluta quasi laudantium quaerat reprehenderit nisi.</p>
-        </RHCard>
-        <RHCard>
-          <img src='https://cdn.dribbble.com/users/4543156/screenshots/14125478/media/cb000e6e6916abe4d76d3ad3d0cf3589.png' alt='' />
-          <h2>Lorem ipsum </h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quo quod, obcaecati pariatur quae, harum sequi molestias impedit nobis magnam illum nam eaque qui soluta quasi laudantium quaerat reprehenderit nisi.</p>
-        </RHCard>
-        <RHCard>
-          <img src='https://cdn.dribbble.com/users/4543156/screenshots/14125478/media/cb000e6e6916abe4d76d3ad3d0cf3589.png' alt='' />
-          <h2>Lorem ipsum </h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quo quod, obcaecati pariatur quae, harum sequi molestias impedit nobis magnam illum nam eaque qui soluta quasi laudantium quaerat reprehenderit nisi.</p>
-        </RHCard>
-        <RHCard>
-          <img src='https://cdn.dribbble.com/users/4543156/screenshots/14125478/media/cb000e6e6916abe4d76d3ad3d0cf3589.png' alt='' />
-          <h2>Lorem ipsum </h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quo quod, obcaecati pariatur quae, harum sequi molestias impedit nobis magnam illum nam eaque qui soluta quasi laudantium quaerat reprehenderit nisi.</p>
-        </RHCard>
+        {
+          projects.map((project, index) => (
+            <RHCard key={`project${index}`} onClick={() => handleClick(project.url)}>
+              <img src={project.image} alt='' />
+              <h2>{project.title}</h2>
+              <p>{project.description}</p>
+            </RHCard>
+          ))
+        }
       </div>
     </section>
   )

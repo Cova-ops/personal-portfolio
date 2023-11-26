@@ -13,8 +13,8 @@ import styles from './About.module.css'
 // constants
 const socialMedia = [
   'https://github.com/Cova-ops',
-  'https://www.linkedin.com/in/daniel-covarrubias-a5b2b7191/',
-  'https://twitter.com/cova50784'
+  'https://www.linkedin.com/in/daniel-covarrubias-a5b2b7191/'
+  // 'https://twitter.com/cova50784'
 ]
 
 // ----------------------------------------------------------------------

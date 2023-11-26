@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 
 import styles from './Button.module.css'
 
-const Button = ({ text, onClick }) => {
+const Button = ({ text, onClick, className }) => {
   return (
     <button
-      className={styles.button}
+      className={`${styles.button} ${className}`}
       onClick={onClick}
     >
       {text}
@@ -16,7 +16,8 @@ const Button = ({ text, onClick }) => {
 
 Button.propTypes = {
   text: PropTypes.string.isRequired,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
+  className: PropTypes.string
 }
 
 export default Button

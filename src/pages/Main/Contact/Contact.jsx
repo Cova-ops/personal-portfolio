@@ -10,9 +10,9 @@ import styles from './Contact.module.css'
 // constants
 const Links = [
   { url: 'https://github.com/Cova-ops', string: 'github.com/Cova-ops' },
-  { url: 'mailto:dacovasan00@gmail.com?subject=Asunto del correo&body=Contenido del mensaje', string: 'dacovasan00@gmail.com' },
-  { url: 'https://www.linkedin.com/in/daniel-covarrubias-a5b2b7191/', string: 'linkedin.com/daniel-covarrubias' },
-  { url: 'https://twitter.com/cova50784', string: 'twitter.com/daniel-covarrubias' }
+  { url: 'mailto:dacovasan00@gmail.com?subject=Topic&body=Hi Daniel...', string: 'dacovasan00@gmail.com' },
+  { url: 'https://www.linkedin.com/in/daniel-covarrubias-a5b2b7191/', string: 'linkedin.com/daniel-covarrubias' }
+  // { url: 'https://twitter.com/cova50784', string: 'twitter.com/daniel-covarrubias' }
 ]
 
 // ----------------------------------------------------------------------
@@ -28,6 +28,8 @@ const Contact = () => {
       <div className={styles.body__container}>
         <p>
           I'm excited to connect with you and discuss how we can work together to achieve your web development goals. Whether you have a project in mind, need assistance with an existing system, or simply want to explore the possibilities, I'm here to help.
+        </p>
+        <p>
           Feel free to reach out via the contact information provided below, and I'll get back to you as soon as possible. I'm open to inquiries, collaboration opportunities, and any questions you may have. Let's start the conversation and turn your ideas into reality.
         </p>
 

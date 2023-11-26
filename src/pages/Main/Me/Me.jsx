@@ -32,7 +32,7 @@ function Me () {
         <span className={styles.desc}>
           Hello and welcome to my online portfolio. I'm a passionate and experienced back-end developer dedicated to creating robust and efficient web applications. With a strong foundation in programming, I specialize in crafting the unseen but vital components that power the digital world.
         </span>
-        <RHButton text='Download CV' onClick={handleDownloadCV} />
+        <RHButton className={styles.cv} text='Download CV' onClick={handleDownloadCV} />
       </div>
       <img src={avatar} alt='avatar' className={styles.avatar} />
 
