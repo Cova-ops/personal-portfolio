@@ -1,38 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Daniel Covarrubias - Full-Stack Software Enginner Portfolio
 
-## Getting Started
+Welcome to my software developer portfolio! This repository showcases my work, skills, and experience as a software developer. I'm passionate about creating efficient and user-friendly solutions, and I'm excited to share my journey with you.
 
-First, run the development server:
+## About Me
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- **Name:** [Your Name]
+- **Location:** [Your Location]
+- **Email:** [Your Email Address]
+- **LinkedIn:** [Link to your LinkedIn profile]
+- **Portfolio Website:** [Link to your portfolio website if you have one]
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Table of Contents
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+1. [Projects](#projects)
+2. [Skills](#skills)
+3. [Education](#education)
+4. [Work Experience](#work-experience)
+5. [Contact](#contact)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Projects
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+In this section, you will find a selection of my most notable projects. Each project is accompanied by a brief description, links to the source code and live demos (if available), and the technologies used.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Project 1: [Project Name]**
 
-## Learn More
+  - Description: [Brief description of the project]
+  - Source Code: [Link to the GitHub repository]
+  - Live Demo: [Link to the live project (if available)]
 
-To learn more about Next.js, take a look at the following resources:
+- **Project 2: [Project Name]**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  - Description: [Brief description of the project]
+  - Source Code: [Link to the GitHub repository]
+  - Live Demo: [Link to the live project (if available)]
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Project 3: [Project Name]**
+  - Description: [Brief description of the project]
+  - Source Code: [Link to the GitHub repository]
+  - Live Demo: [Link to the live project (if available)]
 
-## Deploy on Vercel
+Feel free to explore these projects to get a sense of my coding style and problem-solving skills.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Skills
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Here are some of the skills and technologies I'm proficient in:
+
+- **Programming Languages:** [List programming languages you are skilled in]
+- **Web Development:** [List web development technologies and frameworks]
+- **Database:** [List database management systems]
+- **Version Control:** [e.g., Git]
+- **Other:** [Any other relevant skills]
+
+## Education
+
+- **[Degree] in [Major]** - [University Name], [Year]
+  - [Relevant courses or achievements]
+
+## Work Experience
+
+- **[Job Title] at [Company Name]** - [Start Date] to [End Date]
+
+  - [Brief description of your role and responsibilities]
+  - [Highlight any significant achievements or projects]
+
+- **[Job Title] at [Company Name]** - [Start Date] to [End Date]
+  - [Brief description of your role and responsibilities]
+  - [Highlight any significant achievements or projects]
+
+## Contact
+
+If you'd like to get in touch with me, please feel free to reach out via email at [Your Email Address]. You can also connect with me on [LinkedIn](Link to your LinkedIn profile) for professional networking.
+
+Thank you for visiting my portfolio! I'm excited to discuss potential collaborations and opportunities with you.
+
+## Additional Information
+
+- [Live](https://portfolio.dacovasan.dev/)
+- [Design by Lavinia Melo](https://dribbble.com/shots/14125478-Developer-Personal-Portifolio-Website/attachments/5748826?mode=media)

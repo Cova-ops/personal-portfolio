@@ -1,0 +1,95 @@
+.me {
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 100px;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  max-height: 1080px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: radial-gradient(#2c3745, #181E26 60%);
+  z-index: 1;
+}
+
+.information {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 10;
+}
+
+.information>.role {
+  font-family: 'Cascadia Code PL';
+  font-size: 1.5rem;
+  color: #5AFFEE;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.information>.name {
+  font-family: 'Cascadia Code PL';
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.information>.desc {
+  font-family: 'Courier New';
+  font-size: 1.3rem;
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+.avatar {
+  width: 500px;
+  height: 500px;
+  display: block;
+  margin-bottom: 20px;
+  z-index: 10;
+}
+
+@media screen and (max-width: 1200px) {
+  .me {
+    flex-direction: column;
+    margin: 0 30px;
+    justify-content: space-evenly;
+  }
+
+  .information {
+    width: 100%;
+    align-items: center;
+  }
+
+  .avatar {
+    width: 300px;
+    height: 300px;
+  }
+
+  .information>.role {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .information>.name {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .information>.desc {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 500px;
+    min-width: 300px;
+  }
+}
