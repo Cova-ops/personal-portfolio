@@ -64,8 +64,8 @@ const About = () => {
     <section className={styles.container} id={idSectionAbout}>
       <div className={styles.information}>
         <div className={styles.avatar}>
-          {/* <img src={imgMe} alt='' /> */}
-          <img src='https://cdn.dribbble.com/users/4543156/screenshots/14125478/media/cb000e6e6916abe4d76d3ad3d0cf3589.png' alt='' />
+          <img src={imgMe} alt='' />
+          {/* <img src='https://cdn.dribbble.com/users/4543156/screenshots/14125478/media/cb000e6e6916abe4d76d3ad3d0cf3589.png' alt='' /> */}
           <h2>Daniel Covarrubias</h2>
           <div className={styles.media}>
             {
