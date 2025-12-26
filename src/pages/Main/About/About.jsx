@@ -14,7 +14,6 @@ import styles from './About.module.css'
 const socialMedia = [
   'https://github.com/Cova-ops',
   'https://www.linkedin.com/in/daniel-covarrubias-a5b2b7191/'
-  // 'https://twitter.com/cova50784'
 ]
 
 // ----------------------------------------------------------------------
@@ -78,12 +77,22 @@ const About = () => {
             <span className={styles.blue}>&gt;</span>
             About
           </h2>
-          <h4>Meet Me: Your Back-End Development Partner</h4>
+          <h4>Meet Me: Senior Software Engineer / Technical Lead</h4>
+
           <p>
-            I'm Daniel Covarrubias, a dedicated <strong>back-end</strong> developer with a passion for crafting the hidden infrastructure that powers the digital world. With 2 years of experience in the field, I have honed my skills in creating <strong>efficient</strong>, <strong>secure</strong>, and <strong>scalable</strong> web applications. My journey as a developer has been marked by continuous learning, problem-solving, and a commitment to excellence.
+            I'm Daniel Covarrubias, a <strong>Senior Software Engineer</strong> and <strong>Technical Lead</strong> with
+            <strong> over 4 years</strong> of professional experience building <strong>scalable backend systems</strong> and leading
+            <strong> technical initiatives</strong> in <strong>production environments</strong>.
           </p>
+
           <p>
-            My commitment to precision, efficiency, and continuous improvement makes me a valuable asset for any <strong>web development</strong> project. I'm passionate about delivering results and exceeding expectations. Collaborating with me means tapping into a wealth of knowledge and experience to bring your ideas to <strong>life</strong>.
+            I specialize in <strong>system architecture</strong>, <strong>cloud-native solutions</strong>, and
+            <strong> high-availability platforms</strong>, with hands-on experience in <strong>Node.js</strong>,
+            <strong> TypeScript</strong>, <strong>AWS</strong>, and <strong>distributed systems</strong>.
+          </p>
+
+          <p>
+            Currently <strong>open to relocation to Germany</strong>.
           </p>
         </div>
       </div>

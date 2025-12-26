@@ -13,9 +13,22 @@
   margin-bottom: 20px;
 }
 
+.section_skills {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.section_skills>h3 {
+  font-family: 'Cascadia Code PL';
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
 .skills__container {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 20px;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
@@ -23,8 +36,7 @@
 }
 
 .skill {
-  min-width: 300px;
-  min-height: 150px;
+  min-width: 150px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -38,6 +50,7 @@
   font-size: 1rem;
   letter-spacing: 1px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .skill>img {

@@ -28,7 +28,7 @@
 
 .information>.role {
   font-family: 'Cascadia Code PL';
-  font-size: 1.5rem;
+  font-size: 1.15rem;
   color: #5AFFEE;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -36,7 +36,7 @@
 
 .information>.name {
   font-family: 'Cascadia Code PL';
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: white;
   margin-bottom: 20px;
 }

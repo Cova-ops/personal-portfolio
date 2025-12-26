@@ -24,13 +24,21 @@ function Me () {
 
       <div className={styles.information}>
         <span className={styles.role}>
-          Full-Stack Software Engineer
+          Senior Software Engineer / Technical Lead
+          Backend & Distributed Systems | Cloud & Architecture
         </span>
         <span className={styles.name}>
-          Daniel Covarrubias
+          Daniel Covarrubias Sanchez
         </span>
         <span className={styles.desc}>
-          Hello and welcome to my online portfolio. I'm a passionate and experienced back-end developer dedicated to creating robust and efficient web applications. With a strong foundation in programming, I specialize in crafting the unseen but vital components that power the digital world.
+          I design and build scalable backend systems used in production
+          by high-volume platforms. Experienced in cloud-native architectures,
+          microservices, and leading engineering teams.
+
+        </span>
+
+        <span className={styles.desc}>
+          Currently open to relocation to Germany.
         </span>
         <RHButton className={styles.cv} text='Download CV' onClick={handleDownloadCV} />
       </div>
